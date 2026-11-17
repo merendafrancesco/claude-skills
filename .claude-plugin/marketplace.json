@@ -1,0 +1,47 @@
+{
+  "name": "claude-skills",
+  "owner": {
+    "name": "merendafrancesco"
+  },
+  "metadata": {
+    "description": "Skill personali per Claude Code (basate su anthropics/skills)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "documenti",
+      "description": "Word, PDF, PowerPoint ed Excel",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/docx", "./skills/pdf", "./skills/pptx", "./skills/xlsx"]
+    },
+    {
+      "name": "sviluppo",
+      "description": "Creazione di skill, server MCP e app con la Claude API",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/skill-creator", "./skills/mcp-builder", "./skills/claude-api"]
+    },
+    {
+      "name": "design-web",
+      "description": "Design frontend, arte visiva, temi, artifact web e test di webapp",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/frontend-design", "./skills/canvas-design", "./skills/theme-factory", "./skills/web-artifacts-builder", "./skills/webapp-testing", "./skills/algorithmic-art"]
+    },
+    {
+      "name": "scrittura",
+      "description": "Co-scrittura di documenti, comunicazioni interne e linee guida di brand",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/doc-coauthoring", "./skills/internal-comms", "./skills/brand-guidelines"]
+    },
+    {
+      "name": "extra",
+      "description": "GIF animate per Slack e guida ai corsi di Claude Academy",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/slack-gif-creator", "./skills/academy-guide"]
+    }
+  ]
+}
