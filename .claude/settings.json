@@ -1,0 +1,18 @@
+{
+  "extraKnownMarketplaces": {
+    "claude-skills": {
+      "source": {
+        "source": "github",
+        "repo": "merendafrancesco/claude-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "documenti@claude-skills": true,
+    "sviluppo@claude-skills": true,
+    "design-web@claude-skills": true,
+    "scrittura@claude-skills": true,
+    "extra@claude-skills": true,
+    "humanizer@claude-skills": true
+  }
+}
