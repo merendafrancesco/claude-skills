@@ -13,6 +13,7 @@ raggruppate per argomento. Si installa una volta e vale in tutti i progetti.
 | `design-web` | frontend-design, canvas-design, theme-factory, web-artifacts-builder, webapp-testing, algorithmic-art | Design frontend, arte visiva, temi, artifact web, test di webapp |
 | `scrittura` | doc-coauthoring, internal-comms, brand-guidelines | Co-scrittura di documenti, comunicazioni interne, linee guida di brand |
 | `extra` | slack-gif-creator, academy-guide | GIF animate per Slack, guida ai corsi di Claude Academy |
+| `humanizer` | humanizer | Riscrivere testi che suonano generati da un'AI, senza cambiarne il contenuto (da [blader/humanizer](https://github.com/blader/humanizer), MIT) |
 
 ## Installazione globale (consigliata)
 
@@ -24,7 +25,7 @@ In Claude Code, da qualsiasi cartella:
 ```
 
 Ripeti `/plugin install <nome>@claude-skills` per ogni plugin che vuoi
-(`sviluppo`, `design-web`, `scrittura`, `extra`). I plugin si installano a
+(`sviluppo`, `design-web`, `scrittura`, `extra`, `humanizer`). I plugin si installano a
 livello utente, quindi sono disponibili **in tutti i progetti** aperti sul tuo
 computer.
 
@@ -37,6 +38,7 @@ aggiunge anche il marketplace:
 /plugin install design-web --marketplace merendafrancesco/claude-skills
 /plugin install scrittura --marketplace merendafrancesco/claude-skills
 /plugin install extra --marketplace merendafrancesco/claude-skills
+/plugin install humanizer --marketplace merendafrancesco/claude-skills
 ```
 
 L'installazione scrive in `~/.claude/settings.json` le stesse chiavi
@@ -83,7 +85,8 @@ Copia questo file in `.claude/settings.json` del progetto e fai commit:
     "sviluppo@claude-skills": true,
     "design-web@claude-skills": true,
     "scrittura@claude-skills": true,
-    "extra@claude-skills": true
+    "extra@claude-skills": true,
+    "humanizer@claude-skills": true
   }
 }
 ```
@@ -164,5 +167,6 @@ nelle chat di claude.ai e nelle sessioni di Claude Code sul web:
 Le skill provengono da [anthropics/skills](https://github.com/anthropics/skills)
 e sono distribuite con licenza Apache 2.0: ogni cartella conserva il proprio
 `LICENSE.txt`. Fa eccezione `doc-coauthoring`, che nel repository originale non
-include un file di licenza. Le note sulle componenti di terze parti sono in
+include un file di licenza. `humanizer` viene invece da
+[blader/humanizer](https://github.com/blader/humanizer), con licenza MIT. Le note sulle componenti di terze parti sono in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
