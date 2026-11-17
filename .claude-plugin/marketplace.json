@@ -42,6 +42,13 @@
       "source": "./",
       "strict": false,
       "skills": ["./skills/slack-gif-creator", "./skills/academy-guide"]
+    },
+    {
+      "name": "humanizer",
+      "description": "Riscrive testi che suonano generati da un'AI togliendone i tic, senza cambiarne il contenuto (da blader/humanizer, MIT)",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/humanizer"]
     }
   ]
 }
