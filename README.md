@@ -36,6 +36,31 @@ Per ricevere le modifiche fatte al repository:
 /plugin marketplace update claude-skills
 ```
 
+## Attivarle per un singolo progetto (anche nel cloud)
+
+Copia questo file in `.claude/settings.json` del progetto e fai commit:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "claude-skills": {
+      "source": { "source": "github", "repo": "merendafrancesco/claude-skills" }
+    }
+  },
+  "enabledPlugins": {
+    "documenti@claude-skills": true,
+    "sviluppo@claude-skills": true,
+    "design-web@claude-skills": true,
+    "scrittura@claude-skills": true,
+    "extra@claude-skills": true
+  }
+}
+```
+
+Chiunque apra il progetto con Claude Code (sul computer o in una sessione
+cloud) riceve la proposta di installare il marketplace e i plugin elencati.
+Rimuovi le righe dei plugin che non servono a quel progetto.
+
 ## In alternativa: copia manuale
 
 Copia le cartelle delle skill che ti servono in `~/.claude/skills/`:
