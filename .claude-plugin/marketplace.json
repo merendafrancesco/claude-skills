@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Skill personali per Claude Code (basate su anthropics/skills)",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -38,10 +38,10 @@
     },
     {
       "name": "extra",
-      "description": "GIF animate per Slack e guida ai corsi di Claude Academy",
+      "description": "GIF animate per Slack, guida ai corsi di Claude Academy e domande di verifica dopo le risposte importanti",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/slack-gif-creator", "./skills/academy-guide"]
+      "skills": ["./skills/slack-gif-creator", "./skills/academy-guide", "./skills/discernment-nudge"]
     },
     {
       "name": "humanizer",
