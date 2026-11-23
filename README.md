@@ -12,7 +12,7 @@ raggruppate per argomento. Si installa una volta e vale in tutti i progetti.
 | `sviluppo` | skill-creator, mcp-builder, claude-api | Creare skill, server MCP e app con la Claude API |
 | `design-web` | frontend-design, canvas-design, theme-factory, web-artifacts-builder, webapp-testing, algorithmic-art | Design frontend, arte visiva, temi, artifact web, test di webapp |
 | `scrittura` | doc-coauthoring, internal-comms, brand-guidelines | Co-scrittura di documenti, comunicazioni interne, linee guida di brand |
-| `extra` | slack-gif-creator, academy-guide | GIF animate per Slack, guida ai corsi di Claude Academy |
+| `extra` | slack-gif-creator, academy-guide, discernment-nudge | GIF animate per Slack, guida ai corsi di Claude Academy, 2-3 domande per verificare fatti e ragionamenti dopo una risposta importante |
 | `humanizer` | humanizer | Riscrivere testi che suonano generati da un'AI, senza cambiarne il contenuto (da [blader/humanizer](https://github.com/blader/humanizer), MIT) |
 
 ## Installazione globale (consigliata)
